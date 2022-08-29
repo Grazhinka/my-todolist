@@ -1,38 +1,108 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  font-family: 'Nunito', sans-serif;
+  height: 100vh;
+  color: #7F5283;
+  background-image: url(https://images.pexels.com/photos/1153655/pexels-photo-1153655.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-position: center;
+  background-size: cover;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.mainDiv {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  text-align: center;
+  background-color: #fefbf6e0;
+  text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+  0px -5px 35px rgba(255,255,255,0.3);
+  border-radius: 5px;
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  min-height: 80vh;  
+  margin-bottom: 0px;
 }
 
-.App-link {
-  color: #61dafb;
+h1{
+  font-size: 40px;
+  text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+  0px -5px 35px rgba(255,255,255,0.3);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.addTaskDiv{
+  display: flex;
+  justify-content: space-between;
+}
+
+input{
+  font-family: 'Nunito', sans-serif;
+  font-size: 23px;
+  height: 40px;
+  width: 250px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+  0px -5px 35px rgba(255,255,255,0.3);
+}
+.addBtn{
+  background-color: #A6D1E6;
+  font-family: 'Nunito', sans-serif;
+  font-size: 23px;
+  height: 40px;
+  width: 40px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+  0px -5px 35px rgba(255,255,255,0.3);
+}
+.deleteAllBtn{
+font-family: 'Nunito', sans-serif;
+background-color: #7F5283 ;
+font-size: 23px;
+padding: 10px;
+border-radius: 5px;
+border: none;
+box-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+0px -5px 35px rgba(255,255,255,0.3);
+margin-bottom: 20px;
+}
+.deleteDoneBtn{
+  font-family: 'Nunito', sans-serif;
+background-color: #A6D1E6 ;
+font-size: 18px;
+padding: 10px;
+border-radius: 5px;
+border: none;
+box-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+0px -5px 35px rgba(255,255,255,0.3);
+margin-bottom: 20px;
+}
+
+ul{
+  padding-left: 0px;
+}
+
+li{
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  font-size: 25px;
+  word-wrap:break-word;
+  background-color: #A6D1E6;
+  color: black;
+  padding: 5px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+  0px -5px 35px rgba(255,255,255,0.3);
+}
+
+.liTwo{
+  text-decoration: line-through;
+  color: #7F5283;
 }
