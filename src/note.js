@@ -77,7 +77,7 @@ export class AppCode extends Component{
         return(
             <form className="mainDiv" onSubmit={this.onFormSubmit}>
                 <div>
-                <h1>Список дел</h1>
+                <h1>Список дел на сегодня</h1>
                 <div className="addTaskDiv">
                     <input value={this.state.userInput} placeholder="Введите текст..." type='text' onChange={(e)=>{this.onChangeEvent(e.target.value)}} />
                     <button className="addBtn" onClick={()=>this.addItem(this.state.userInput)}>+</button>
