@@ -1,5 +1,5 @@
 import { Component } from "react";
-import del from './del.png'
+import done from './done.png'
 import red from './red.png'
 import returnI from './return.png'
 
@@ -77,7 +77,7 @@ export class AppCode extends Component{
         return(
             <form className="mainDiv" onSubmit={this.onFormSubmit}>
                 <div>
-                <h1>Список дел на сегодня</h1>
+                <h1>Список дел</h1>
                 <div className="addTaskDiv">
                     <input value={this.state.userInput} placeholder="Введите текст..." type='text' onChange={(e)=>{this.onChangeEvent(e.target.value)}} />
                     <button className="addBtn" onClick={()=>this.addItem(this.state.userInput)}>+</button>
@@ -87,8 +87,8 @@ export class AppCode extends Component{
                         <li key={index}>
                             {item }                  
                             <div>
-                               <img src={del} width='25px' alt='del' onClick={()=>this.deleteOne(item,index)}  />
-                               <img src={red} width='25px' alt='red' onClick={()=>this.redact(item,index)} />
+                               <img src={done} width='26px' alt='del' onClick={()=>this.deleteOne(item,index)}  />
+                               <img src={red} width='30px' alt='red' onClick={()=>this.redact(item,index)} />
                             </div>
                         </li>
                     ))}

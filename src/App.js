@@ -3,10 +3,8 @@ import { AppCode } from './note';
 
 function App() {
   return (
-    <div >
+    <div className="App">
       <AppCode/>
-
- 
     </div>
   );
 }
