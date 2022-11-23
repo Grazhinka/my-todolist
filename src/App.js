@@ -1,10 +1,11 @@
 import './App.css';
-import { AppCode } from './note';
+import Note from './note';
+
 
 function App() {
   return (
-    <div className="App">
-      <AppCode/>
+    <div className="App box">
+      <Note/>
     </div>
   );
 }
